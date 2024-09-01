@@ -1,0 +1,379 @@
+/* Estilo base para todo el documento */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+header .btn {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+header .btn:hover {
+    background-color: #e67e22;
+}
+
+/* Estilo para la navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Estilo para la sección "Sobre mí" */
+#about {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#about p {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify; /* Opcional: Justifica el texto para una presentación más profesional */
+}
+
+/* Estilo para la sección "Proyectos" */
+#projects {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#projects .project {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+#projects .project:hover {
+    transform: translateY(-10px);
+}
+
+#projects .project img {
+    width: 100%;
+    height: auto;
+}
+
+#projects .project h3 {
+    font-size: 1.5em;
+    margin: 15px 0;
+    color: #333;
+}
+
+#projects .project p {
+    padding: 0 15px;
+    color: #666;
+}
+
+#projects .project .btn {
+    display: block;
+    margin: 15px auto 20px auto;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+#projects .project .btn:hover {
+    background-color: #f39c12;
+}
+
+/* Estilo para la sección "Contacto" */
+#contact {
+    padding: 50px 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+}
+
+#contact form button {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+#contact form button:hover {
+    background-color: #e67e22;
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+footer .social-media a {
+    color: #f39c12;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer .social-media a:hover {
+    color: #e67e22;
+}
+/*
+Explicación del CSS:
+
+Paleta de Colores:
+
+#333: Un gris oscuro usado para el texto y fondo del encabezado, proporcionando seriedad.
+#f39c12: Un color naranja usado para botones y elementos interactivos, añadiendo un toque de creatividad.
+#fff: Blanco para contrastar y dar limpieza al diseño.
+#f4f4f4: Un gris claro para el fondo general, manteniendo un tono neutral y profesional.
+#222: Un gris aún más oscuro para el pie de página, ayudando a enfocar la atención en el contenido.
+
+- Tipografía:
+
+Usé Poppins porque es una fuente moderna, limpia y profesional que da un aspecto formal y a la vez creativo.
+Encabezado:
+
+El encabezado utiliza un fondo oscuro para dar un impacto visual fuerte y un contraste con el texto en blanco. 
+El botón de llamada a la acción está resaltado en un color naranja.
+
+- Navegación:
+
+La barra de navegación es simple pero efectiva, centrada y con un cambio de color al pasar el ratón para 
+la interacción del usuario.
+
+-Sección "Sobre mí":
+
+Se utiliza un diseño minimalista, centrando el texto para una lectura fácil y clara. 
+Esta sección actúa como una introducción, por lo que debe ser breve y concisa.
+
+-Sección "Proyectos":
+
+Los proyectos se presentan en tarjetas con sombras y bordes redondeados para destacar visualmente.
+ Se incluye un efecto de desplazamiento para añadir dinamismo.
+
+- Sección "Contacto":
+
+Un fondo oscuro con texto claro para hacer que el formulario sea más legible y atractivo.
+ El botón sigue la paleta de colores, y se integra de manera uniforme con el resto del diseño.
+
+- Pie de Página:
+
+Simple y enfocado en la información esencial, con enlaces a redes sociales que cambian de color al pasar
+ el ratón para mejorar la interactividad.
+ 
+**/
+
+/*--------------------------------*/
+
+/* Estilo para la sección "Tecnologías" */
+#technologies {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+    border-top: 2px solid #eaeaea; /* Línea sutil para separar secciones */
+}
+
+#technologies h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 600;
+}
+
+.tech-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.tech-icon {
+    text-align: center;
+    width: 120px; /* Tamaño fijo para cada ícono */
+}
+
+.tech-icon i {
+    font-size: 3.5em;
+    color: #333;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.tech-icon i:hover {
+    color: #f39c12;
+    transform: scale(1.2);
+}
+
+.tech-icon p {
+    margin-top: 15px;
+    font-size: 1.1em;
+    color: #555;
+    font-weight: 500;
+}
+/*
+Explicación del CSS:
+Sección "Tecnologías":
+
+La sección tiene un padding generoso para espaciar adecuadamente los elementos y un fondo blanco
+para contrastar con otras secciones.
+Una línea superior sutil (border-top) se añade para separar visualmente esta sección de las anteriores.
+Título de la Sección:
+
+El título (<h2>) se hace prominente con un tamaño de fuente de 2.5em y un margen 
+inferior para espaciarlo del contenido siguiente.
+Contenedor de Iconos (.tech-icons):
+
+Los iconos se alinean en el centro y se organizan en filas utilizando flexbox. 
+La propiedad flex-wrap: wrap; asegura que los iconos se ajusten automáticamente en diferentes tamaños de pantalla.
+Estilo de Cada Icono (.tech-icon):
+
+Cada icono tiene un tamaño fijo para asegurar una presentación uniforme. El texto descriptivo debajo de cada icono está centrado, con un margen superior para separar del icono.
+Los iconos tienen un tamaño considerable (font-size: 3.5em) y cambian de color y t
+amaño cuando se pasa el ratón sobre ellos, lo que agrega una interacción visual atractiva.
+Texto Descriptivo (.tech-icon p):
+
+El texto debajo de cada icono tiene un tamaño moderado y un color gris oscuro para mantener un enfoque en los iconos, 
+pero sigue siendo fácilmente legible.
+Este CSS te proporcionará una presentación profesional y visualmente atractiva para la sección de "Tecnologías", 
+destacando las habilidades y herramientas con las que trabajas de manera clara y efectiva.
+*/
+
+/*-----------------------*/
+
+/* Estilo para el tooltip */
+.tooltip {
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 5px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    pointer-events: none; /* Evita que el tooltip interfiera con otros eventos del ratón */
+    z-index: 1000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+/*
+
+Explicación del CSS:
+
+position: absolute;: Permite que el tooltip se posicione en relación con la página.
+pointer-events: none;: Asegura que el tooltip no interfiera con los eventos del ratón, 
+como el mouseover.
+z-index: 1000;: Asegura que el tooltip aparezca encima de otros elementos.
+Integración
+Asegúrate de que este código JavaScript esté en tu archivo script.js y el CSS para el tooltip 
+esté en tu archivo styles.css.
+Este código se encargará de añadir una pequeña interacción visual cuando el usuario pase 
+el ratón por encima de las tecnologías en tu sección "Tecnologías".
+Este enfoque no solo hace que tu portafolio sea más interactivo, sino que también ayuda 
+a resaltar tus habilidades tecnológicas de una manera más atractiva y profesional.*/

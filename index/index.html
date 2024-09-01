@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio</title>
+    <!-- Vinculación del archivo CSS -->
+    <link rel="stylesheet" href="..\css\styles.css">
+    <!-- Vinculación de Google Fonts para tipografías elegantes -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+</head>
+
+<body>
+    <!-- Inicio del encabezado del sitio -->
+    <header>
+        <nav>
+            <ul>
+                <!-- Barra de navegación básica -->
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#technologies">Tecnologías</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- Título principal del portfolio -->
+        <div class="header-content">
+            <h1><span id="typed"></span><</h1>
+            <p>Desarrollador de Aplicaciones Multiplataforma.</p>
+            <a href="#projects" class="btn">Proyectos</a>
+        </div>
+    </header>
+
+    <!-- Sección "Sobre mí" -->
+    <section id="about">
+        <h2>Sobre mí</h2>
+        <p>Soy un desarrollador con dos años de experiencia trabajando en el sector tecnológico. 
+
+            Durante este tiempo, he contribuido en proyectos internacionales y he adquirido un conocimiento profundo en el desarrollo de aplicaciones.</p>
+    <p>Además de mi experiencia técnica, he adquirido formación como Scrum Master, lo que me ha permitido conocer equipos de desarrollo de manera efectiva. Mi enfoque está en combinar habilidades técnicas con una gestión ágil para entregar productos de alta calidad que satisfagan las necesidades del cliente.</p>
+    </section>
+
+    <!--Sección "Tecnologías" -->
+    <section id="technologies">
+        <h2>Tecnologías</h2>
+        <div class="tech-icons">
+            <div class="tech-icon">
+                <i class="fab fa-html5"></i>
+                <p><img src="..\images\html548.png" alt="Html5"></p>
+            </div>
+            <div class="tech-icon">
+                <i class="fab fa-java"></i>
+                <p><img src="..\images\java48.png" alt="Java"></p>
+            </div>
+            <div class="tech-icon">
+                <i class="fab fa-js"></i>
+                <p><img src="..\images\javascript48.png" alt="JavaScripy"></p>
+            </div>
+            <div class="tech-icon">
+                <i class="fab fa-angular"></i>
+                <p><img src="..\images\angular48.png" alt="Angular"></p>
+            </div>
+            <div class="tech-icon">
+                <i class="fab fa-spring"></i>
+                <p><img src="..\images\spring48.png" alt="Spring"></p>
+            </div>
+            <div class="tech-icon">
+                <i class="fab fa-android"></i>
+                <p><img src="..\images\android48.png" alt="Android"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección "Proyectos" -->
+    <section id="projects">
+        <h2>Proyectos</h2>
+        <!-- Cada proyecto estará contenido en un artículo -->
+        <article class="project">
+            <img src="..\images\iconoTodoList.jpg" alt="Imagen de proyecto TodoListApp">
+            <h3>TodoList</h3>
+            <p>Aplicación Android que gestiona tareas pendientes, permitiendo a los usuarios crear, 
+                organizar y marcar tareas como completadas de manera eficiente.</p>
+            <a href="https://github.com/Dev-osc/TodoList.git" class="btn">Ver en GitHub</a>
+        </article>
+
+        <article class="project">
+            <img src="..\images\portfolio.jpg" alt="Imagen de proyecto Portfolio">
+            <h3>Portfolio</h3>
+            <p>Aplicación web personal que muestra proyectos, 
+                habilidades y experiencias, proporcionando una plataforma 
+                profesional, que conbina las tecnologías para destacar los trabajos del autor.</p>
+            <a href="https://github.com/tuusuario/proyecto2" class="btn">Ver en GitHub</a>
+        </article>
+
+        <article class="project">
+            <img src="..\images\coming.jpg" alt="En proceso.. ">
+            <h3>Desarrollando..</h3>
+            <p>Desarrollo una aplicación web con Java Spring, 
+                Angular y SQL que integrará una interfaz intuitiva con un backend robusto, 
+                permitiendo gestionar datos de forma eficiente y segura.</p>
+            <a href="https://github.com/tuusuario/proyecto2" class="btn">Ver en GitHub</a>
+        </article>
+        
+        <!-- Puedes añadir más proyectos de la misma forma -->
+    </section>
+
+    <!-- Sección "Contacto" -->
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>Si estás interesado en trabajar conmigo o simplemente quieres saludar, ¡no dudes en contactarme!</p>
+        <form action="https://formspree.io/your-email" method="POST">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Todos los derechos reservados.</p>
+        <div class="social-media">
+            <a href="https://twitter.com/tuusuario" target="_blank">Twitter</a> |
+            <a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/Dev-osc" target="_blank">GitHub</a> |
+            <a href="https://linktr.ee/oscarmarin13" target="_blank">LinkTree</a>
+        </div>
+    </footer>
+
+    <!-- Vinculación de JavaScript al final para mejorar la carga -->
+    <script src="..\js\script.js"></script>
+
+    <script src="..\js\typed.js"></script> 
+    
+      
+</body>
+
+</html>
